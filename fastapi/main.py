@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Query, Path, Body
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Item(BaseModel):
     name: str
-    description: str = None
-    price: float
+    description: str = Field(None, title="description", max_length=300)
+    price: float = Field(..., gt=0, descreiption="price")
     tax: float = None
 
 
