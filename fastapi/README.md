@@ -1,0 +1,15 @@
+# Trying out FastAPI
+- FastAPI
+  - Pydantic
+    - Evaluation
+    - Type cchecking
+  - Scarlette
+    - ASGI framework
+- Docker
+  - Containerization
+- PostgreSQL
+  - Production ready DB
+- SQLAlchemy
+  - ORM
+- Uvicorn
+  - ASGI server
